@@ -1,0 +1,7 @@
+######################################################
+# Prometheus variables
+
+prometheus:
+  - name: prometheus
+    prometheus_user: prometheus
+    prometheus_shell: /bin/false
