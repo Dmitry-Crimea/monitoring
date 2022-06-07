@@ -1,7 +1,24 @@
 ######################################################
 # Prometheus variables
 
+
+
 prometheus:
   - name: prometheus
     prometheus_user: prometheus
+    prometheus_group: prometheus
     prometheus_shell: /bin/false
+    download_url: https://github.com/prometheus/prometheus/releases/download/v2.33.3/prometheus-2.33.3.linux-amd64.tar.gz
+    download_dir: /home/gu_admin/prometheus/unpack
+    unpack_dir: /home/gu_admin/prometheus/unpack
+    etc_dir: /etc/prometheus
+    var_lib: /var/lib/prometheus
+    version: 2.33.3
+    local_bin: /usr/local/bin/
+    storage: /home/gu_admin/prometheus/data
+    retention_time: 180d
+    log: /var/log/prometheus/prometheus.log
+    targets_dir: /etc/prometheus/targets
+    alerts_dir: /etc/prometheus/alerts
+    remove_src: true
+

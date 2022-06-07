@@ -25,3 +25,4 @@
         - "{{ prometheus.unpack_dir }}"
         - "{{ prometheus.etc_dir }}"
         - "{{ prometheus.var_lib }}"
+
